@@ -10,11 +10,10 @@ module.exports = {
             {name: '-kick @user', value: 'Kick someone out if you have permission to do so.'},
             {name: '-clear num between 1-100. Ex) -clear 10', value: 'Clear chat history up to 100 messages'},
             {name: '-play url OR -play keywords', value: 'Play Music'},
+            {name: '-leave', value : 'Leaves the voice channel'},
             {name: '-definition', value : 'Displays the definition of the word'},
             {name: '-getroles', value : 'Adds roles to the user'},
             {name: '-image', value : 'Displays the searched image'},
-            {name: '-leave', value : 'Leaves the voice channel'}
-
         );
         message.channel.send(newEmbed)
     }
