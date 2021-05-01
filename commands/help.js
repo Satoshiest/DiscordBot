@@ -14,6 +14,8 @@ module.exports = {
             {name: '-definition', value : 'Displays the definition of the word'},
             {name: '-getroles', value : 'Adds roles to the user'},
             {name: '-image', value : 'Displays the searched image'},
+            {name: '-stop', value : 'Stops audio'},
+            {name: '-skip', value : 'Skips to the next song in the queue'},
         );
         message.channel.send(newEmbed)
     }
