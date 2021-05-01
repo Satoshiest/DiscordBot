@@ -6,10 +6,10 @@ module.exports = {
         .setColor('#304281')
         .setTitle('Botoshiest Plugin Commands')
         .addFields(
-            {name: 'Greet', value: '-greet'}, 
-            {name: 'Kick someone out', value: '-kick @user'},
-            {name: 'Clear chat history up to 100 messages', value: '-clear num between 1-100. Ex) -clear 10'},
-            {name: 'Play Music', value: '-play url OR -play keywords.'}
+            {name: '-greet', value: 'Great'}, 
+            {name: '-kick @user', value: 'Kick someone out'},
+            {name: '-clear num between 1-100. Ex) -clear 10', value: 'Clear chat history up to 100 messages'},
+            {name: '-play url OR -play keywords', value: 'Play Music'}
         );
         message.channel.send(newEmbed)
     }
