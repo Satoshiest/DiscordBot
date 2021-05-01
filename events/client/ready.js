@@ -1,3 +1,3 @@
 module.exports = () => {
-    console.log('Botoshi is Online!');
+    console.log('Bot is Online!');
 }
