@@ -10,7 +10,7 @@ module.exports = {
             {name: '-getroles', value : 'Adds roles to the user'},
             {name: '-kick @user', value: 'Kick someone out if you have permission to do so.'},
             {name: '-clear #', value: 'Clear chat history up to 100 messages'},
-            {name: '-urban', value : 'Displays the definition of the word from Urban Dictionary'},
+            {name: '-urbandict', value : 'Displays the definition of the word from Urban Dictionary'},
             {name: '-image', value : 'Displays the searched image'},
             {name: '-play url OR -play keywords', value: 'Adds the song to the queue'},
             {name: '-stop', value : 'Stops audio'},
