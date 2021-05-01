@@ -7,7 +7,7 @@ module.exports = {
         .setTitle('Botoshiest Plugin Commands')
         .addFields(
             {name: '-greet', value: 'Great'}, 
-            {name: '-kick @user', value: 'Kick someone out'},
+            {name: '-kick @user', value: 'Kick someone out if you have permission to do so.'},
             {name: '-clear num between 1-100. Ex) -clear 10', value: 'Clear chat history up to 100 messages'},
             {name: '-play url OR -play keywords', value: 'Play Music'},
             {name: '-definition', value : 'Displays the definition of the word'},
