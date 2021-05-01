@@ -1,12 +1,12 @@
 const ytdl = require('ytdl-core');
 const ytSearch = require('yt-search');
 
-//Global queue for your bot. Every server will have a key and value pair in this map. { guild.id, queue_constructor{} }
+//Global queue. contains { guild.id, queue_constructor{} }
 const queue = new Map();
 
 module.exports = {
     name: 'play',
-    aliases: ['skip', 'stop'], //We are using aliases to run the skip and stop command follow this tutorial if lost: https://www.youtube.com/watch?v=QBUJ3cdofqc
+    aliases: ['skip', 'stop'], //This is for stop and skip commands
     cooldown: 0,
     description: 'Advanced music bot',
     async execute(client, message, cmd, args, Discord){
