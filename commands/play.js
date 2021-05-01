@@ -100,7 +100,7 @@ const play_video = async (guild, song) => {
     await song_queue.text_channel.send(`🎶 Now playing **${song.title}**`)
 }
 
-const skip_song = (client, message, cmd, args, Discord) => {
+const skip_song = (message, server_queue) => {
     if (!message.member.voice.channel) return message.channel.send('You need to be in a channel to execute this command!');
     if(!server_queue){
         return message.channel.send(`There are no songs in queue 😔`);
@@ -108,7 +108,7 @@ const skip_song = (client, message, cmd, args, Discord) => {
     server_queue.connection.dispatcher.end();
 }
 
-const stop_song = (client, message, cmd, args, Discord) => {
+const stop_song = (message, server_queue) => {
     if (!message.member.voice.channel) return message.channel.send('You need to be in a channel to execute this command!');
     server_queue.songs = [];
     server_queue.connection.dispatcher.end();
