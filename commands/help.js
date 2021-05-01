@@ -12,7 +12,7 @@ module.exports = {
             {name: '-clear num between 1-100. Ex) -clear 10', value: 'Clear chat history up to 100 messages'},
             {name: '-definition', value : 'Displays the definition of the word'},
             {name: '-image', value : 'Displays the searched image'},
-            {name: '-play url OR -play keywords', value: 'Play Music'},
+            {name: '-play url OR -play keywords', value: 'Adds the song to the queue'},
             {name: '-stop', value : 'Stops audio'},
             {name: '-skip', value : 'Skips to the next song in the queue'},
             {name: '-leave', value : 'Leaves the voice channel'},
