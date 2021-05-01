@@ -6,7 +6,7 @@ module.exports = {
         .setColor('#304281')
         .setTitle('Botoshiest Plugin Commands')
         .addFields(
-            {name: '-greet', value: 'Great'}, 
+            {name: '-greet', value: 'Displays a geeting'}, 
             {name: '-kick @user', value: 'Kick someone out if you have permission to do so.'},
             {name: '-clear num between 1-100. Ex) -clear 10', value: 'Clear chat history up to 100 messages'},
             {name: '-play url OR -play keywords', value: 'Play Music'},
