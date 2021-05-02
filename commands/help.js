@@ -15,6 +15,8 @@ module.exports = {
             {name: '-translate', value : 'Translate a word or phrase into english'},
             {name: '-definition', value : 'Displays definition'},
             {name: '-play url OR -play keywords', value: 'Adds the song to the queue'},
+            {name: '-pause', value : 'Pause the current song'},
+            {name: '-resume', value : 'Resume the current song'},
             {name: '-skip', value : 'Skips to the next song in the queue'},
             {name: '-leave', value : 'Music bot leaves the voice channel'},
         );
