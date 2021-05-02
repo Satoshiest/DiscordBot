@@ -4,7 +4,7 @@ module.exports = {
     execute(client, message, cmd, args, Discord) {
         const newEmbed = new Discord.MessageEmbed()
         .setColor('#304281')
-        .setTitle('Botoshiest Plugin Commands')
+        .setTitle('NISS Plugin Commands')
         .addFields(
             {name: '-greet', value: 'Displays a welcome greeting'}, 
             {name: '-getroles', value : 'Adds roles to the user'},
