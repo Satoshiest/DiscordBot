@@ -77,12 +77,12 @@ module.exports = {
         }
 
         else if(cmd === 'skip') skip_song(message, server_queue);
-        else if(cmd === 'leave') leave_room(message);
+        else if(cmd === 'leave') leave_room(message, server_queue);
         else if(cmd === 'pause') {
             server_queue.connection.dispatcher.pause();
             message.channel.send('Music paused!');
         }
-        else if(cmd === 'resume'){
+        else if(cmd === 'resume') {
             server_queue.connection.dispatcher.resume();
             message.channel.send('Music resumed!');
         }

@@ -1,6 +1,6 @@
 module.exports = {
     name: 'getroles',
-    description: 'Adding roles to user profile',
+    description: 'Adding roles to user profile.',
     async execute(client, message, cmd, args, Discord){
         const channel = `${message.channel.id}`;
         const CA = message.guild.roles.cache.find(role => role.name === "CA");

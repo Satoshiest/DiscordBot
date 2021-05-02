@@ -13,5 +13,8 @@ module.exports = {
                 message.channel.send('You dont have power to execute this command.');
             }
         }
+        else {
+            message.channel.send('@user you want to kick out from the server.');
+        }
     }
 }

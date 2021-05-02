@@ -1,23 +1,25 @@
+const translator = require('@iamtraction/google-translate');
 
 module.exports = {
     name: 'translate',
     description: 'Translate the message sent by user.',
-    execute(client, message, cmd, args, Discord) {
+    async execute(client, message, cmd, args, Discord) {
         if (cmd === "translate") {
-            if (args.length < 3) {
-                message.reply(speech.BOT_TRANS_SPECIFIC_ERROR);
-            } 
-            else {
-                let argFrom = args[0].toLowerCase();
-                let argTo = args[1].toLowerCase();
-    
-                let lang_from = language.filter(ele => ele.name === argFrom)[0].abrv;
-                let lang_to = language.filter(ele => ele.name=== argTo)[0].abrv;
-                let text = args.slice(2).join(' ');
-    
-                translate(text, {from: lang_from, to: lang_to})
-                    .then(res => message.channel.send(res.text))
-                    .catch(err => console.log(speech.BOT_TRANSLATION_ERROR + err));
+            const language = args[0];
+            const input = args.join(" ");
+            const phrase = input.slice(input.indexOf(' '), input.length);
+            if(!phrase) {
+                message.channel.send('Enter words you want to translate!')
+            }
+            else{
+                translator(phrase, { to: `${language}` })
+                .then(res => {
+                    message.channel.send(res.text)
+                })
+                .catch(err => {
+                    message.channel.send('Please specify a language. \nEx) -translate french hello. \n Or the selected language may not be supported.')
+                    console.error(err);
+                });
             }
         }
     }
