@@ -6,7 +6,7 @@ const queue = new Map();
 
 module.exports = {
     name: 'play',
-    aliases: ['skip', 'leave'], //This is for stop and skip commands
+    aliases: ['skip', 'leave', 'pause', 'resume'], //This is for stop and skip commands
     cooldown: 0,
     description: 'Music command that plays a song from YouTube. Skip and Stop commands as well.',
     async execute(client, message, cmd, args, Discord){
@@ -78,6 +78,12 @@ module.exports = {
 
         else if(cmd === 'skip') skip_song(message, server_queue);
         else if(cmd === 'leave') leave_room(message);
+        else if(cmd === 'pause') {
+            message.channel.send('To be implemented');
+        }
+        else if(cmd === 'resume'){
+            message.channel.send('To be implemented');
+        }
     }
     
 }
@@ -113,3 +119,4 @@ const leave_room = (message, server_queue) => {
     server_queue.songs = [];
     server_queue.connection.dispatcher.end();
 }
+
