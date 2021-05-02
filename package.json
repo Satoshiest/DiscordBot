@@ -10,11 +10,13 @@
   "license": "ISC",
   "dependencies": {
     "@discordjs/opus": "^0.5.0",
+    "@iamtraction/google-translate": "github:iamtraction/google-translate",
     "discord.js": "^12.5.3",
     "dotenv": "^8.2.0",
     "ffmpeg-static": "^4.3.0",
     "images-scraper": "^6.3.0",
     "relevant-urban": "^2.0.0",
+    "weather-js": "^2.0.0",
     "yt-search": "^2.8.0",
     "ytdl-core": "^4.5.0"
   }
