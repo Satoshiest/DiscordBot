@@ -9,7 +9,7 @@ module.exports = {
             {name: '-greet', value: 'Displays a welcome greeting'}, 
             {name: '-getroles', value : 'Adds roles to the user'},
             {name: '-kick @user', value: 'Kick someone out if you have permission to do so.'},
-            {name: '-clear num between 1-100. Ex) -clear 10', value: 'Clear chat history up to 100 messages'},
+            {name: '-clear num between 1-100', value: 'Clear chat history up to 100 messages. Ex) -clear 10'},
             {name: '-urbandict', value : 'Displays the definition of the word from urban dictionary.'},
             {name: '-image', value : 'Displays the searched image'},
             {name: '-translate', value : 'Translate a word or phrase into english'},
