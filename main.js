@@ -1,4 +1,6 @@
 require(`dotenv`).config();
+require('images-scraper');
+
 const Discord = require('discord.js');
 const client = new Discord.Client({partials: ["MESSAGE", "CHANNEL", "REACTION"]});
 const prefix = process.env.PREFIX
