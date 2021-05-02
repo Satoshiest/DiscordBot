@@ -31,3 +31,17 @@ Keep entering "node ." and installing the modules until the terminal displays "b
 To exit the bot out of the server, "ctrl-c" in the terminal
 
 Commands start with "-", do -help to view all the commands avaliable by the bot
+
+Required modules:
+@discordjs/opous
+@iamtraction/google-translate
+discord.js
+dotenv
+ffmpeg-static
+images-scraper
+relavant-urban
+yt-search
+ytdl-core
+
+
+
