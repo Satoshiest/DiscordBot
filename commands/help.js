@@ -12,7 +12,7 @@ module.exports = {
             {name: '-clear num between 1-100. Ex) -clear 10', value: 'Clear chat history up to 100 messages'},
             {name: '-urbandict', value : 'Displays the definition of the word from urban dictionary.'},
             {name: '-image', value : 'Displays the searched image'},
-            {name: '-translate', value : 'Translate a word or phrase into the selected language'},
+            {name: '-translate', value : 'Translate a word or phrase into english'},
             {name: '-definition', value : 'Displays definition'},
             {name: '-play url OR -play keywords', value: 'Adds the song to the queue'},
             {name: '-skip', value : 'Skips to the next song in the queue'},
