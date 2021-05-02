@@ -21,6 +21,7 @@ To install/use the discord bot, download the project repository and open it with
 Create a .env file and copy paste the following below:
 
 TOKEN = (Your discord server token)
+
 PREFIX = -
 
 Save and open music.js and under terminal, type "node ." and hit enter. It may prompt to install modules required to run the bot
