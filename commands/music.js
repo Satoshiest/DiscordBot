@@ -24,7 +24,7 @@ module.exports = {
 
         //Play command
         if (cmd === 'play'){
-            if (!args.length) return message.channel.send('You need to send the second argument!');
+            if (!args.length) return message.channel.send('You need to send the song!');
             let song = {};
 
             //If the first argument is a link.
