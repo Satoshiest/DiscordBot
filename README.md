@@ -16,6 +16,7 @@ List of functions of the bot:
 - Music
 - Translate
 - Urban Dicitonary
+- Weather
 
 To install/use the discord bot, download the project repository and open it with Visual Studio Code
 Create a .env file and copy paste the following below:
