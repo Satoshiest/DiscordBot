@@ -1,4 +1,4 @@
-module.exports = {
+module.exports = { 
     name: 'clear',
     description: 'Clear certain amount of chat logs',
     async execute(cclient, message, cmd, args, Discord) {
